@@ -1,0 +1,9 @@
+def CreateMenu(listOfChoices):
+    '''returns a STRING of numbered menu options
+    the list past must be a list of strings'''
+    tmpStr = ""
+    ct = 1
+    for item in listOfChoices:
+        tmpStr += str(ct) + ")" + item + "\n"
+        ct += 1
+    return tmpStr
